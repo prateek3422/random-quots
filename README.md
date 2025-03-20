@@ -29,8 +29,8 @@ A simple web application that displays random inspirational quotes with a beauti
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/get-random-quots.git
-   cd get-random-quots
+   git clone https://github.com/prateek3422/random-quots.git
+   cd random-quots
    ```
 
 2. No build process is required as this is a simple HTML/JS application.
