@@ -40,6 +40,11 @@ newButton.addEventListener("click", () => {
 copyButton.addEventListener("click", () => {
   const text = `${quote.innerHTML}`;
   navigator.clipboard.writeText(text);
+
+  copyButton.innerHTML = "Copied!";
+  setTimeout(() => {
+    copyButton.innerHTML = "Copy quote";
+  }, 1000);
 });
 
 // tweet quote
