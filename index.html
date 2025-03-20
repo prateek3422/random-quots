@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random quote</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body
+    id="quote-box"
+    class="h-screen flex flex-col justify-center items-center bg-gray-100 overflow-hidden"
+  >
+    <div
+      class="flex flex-col items-start justify-center p-4 bg-white rounded-lg shadow-lg max-w-xl w-full h-96 bg-white/30 backdrop-blur-sm"
+    >
+      <!--  This is the main div where the quote and author will be displayed -->
+      <div
+        id="text"
+        class="text-2xl font-bold text-start text-neutral-200 px-6 word-wrap"
+      >
+        <i class="fa-solid fa-quote-left"></i> <span id="quote"></span>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <div
+        id="author"
+        class="text-xl font-bold text-center text-neutral-200 mt-2 px-6"
+      >
+        Author
+      </div>
+      <div class="flex justify-around w-full mt-4">
+        <!-- These are the buttons for new quote, copy quote and tweet quote -->
+        <button
+          id="new-quote"
+          class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer"
+        >
+          New quote
+        </button>
+        <button
+          id="copy-quote"
+          class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer"
+        >
+          Copy quote
+        </button>
+        <button
+          id="tweet-quote"
+          class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 cursor-pointer"
+        >
+          Tweet quote
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
